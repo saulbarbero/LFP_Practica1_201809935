@@ -1,6 +1,6 @@
 from tkinter import filedialog, Tk
 class Funciones:
-    def abrir(self):
+    def abrir_funcion(self):
         Tk().withdraw()
         archivo = filedialog.askopenfile(
             title = "Seleccionar un archivo LFP",
