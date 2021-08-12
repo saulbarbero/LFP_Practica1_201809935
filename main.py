@@ -1,15 +1,10 @@
+
 from tkinter import filedialog, Tk
+from Funciones import Funciones
 
-listaT = []
-
-def burbuja(lista):
-    for i in range(1,len(lista)):
-        for j in range(0,len(lista)-i):
-            if(lista[j+1] < lista[j]):
-                aux=lista[j];
-                lista[j]=lista[j+1];
-                lista[j+1]=aux;
-    print (lista);
+listaT = [1,56,65,24,23,89]
+#dato = ""
+gestor = Funciones()
 
 def abrir():
     print("En el metodo abrir")
@@ -34,7 +29,12 @@ def abrir():
 def prueba ():
     txt = abrir()
     if txt is not None:
-        print(txt)
+        dato = txt
+        gestor.obtenerData(dato)
+       
+
+        
+        
     else:
         print("Error lectura")
 
@@ -57,6 +57,8 @@ if __name__ == "__main__":
             
         elif opcion == 2:
             print("En 2")
+            gestor.ascendente(listaT)
+            
             
         elif opcion == 3:
             print("En 3")
