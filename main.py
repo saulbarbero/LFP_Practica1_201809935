@@ -57,7 +57,8 @@ if __name__ == "__main__":
             
         elif opcion == 2:
             print("En 2")
-            gestor.ascendente(listaT)
+            gestor.valor_maximo(gestor.usuario)
+            
             
             
         elif opcion == 3:

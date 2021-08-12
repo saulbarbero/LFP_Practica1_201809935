@@ -8,6 +8,8 @@ parametro = ''
 class Funciones:
     def __init__(self):
         self.usuario = []
+        self.usuario.append(Estudiante("Saul","20"))
+        
     
 
     def valor_minimo (self,lista):
@@ -138,6 +140,7 @@ class Funciones:
                     nombreCurso = aux
                     estado = 'nom'
                     aux = ''
+                    #return nombreCurso
             elif estado == 'nom':
                 if (x != '{') or (x != '\n') or (x != '<') or (x != '"'):
                     pass
