@@ -50,17 +50,15 @@ if __name__ == "__main__":
     while opcion != 4:
 
         if opcion == 1:
-            print("\n")
             prueba()
             print("\n")
+            
              
         elif opcion == 2:
-            print("\n")
             gestor.imprimirParametros(gestor.parametros)
             print("\n")
       
         elif opcion == 3:
-            print("\n")
             report.reporte()
             print("\n")
             

@@ -17,7 +17,7 @@ class Reporte:
                 valor_max = x.nota
                 nom = x.nombre
         print("Nota Minima\n","El estudiante ",nom," tiene una nota de: ",valor_max)
-        minimo=print("Nota Minima\n","El estudiante ",nom," tiene una nota de: ",valor_max)
+        minimo="Nota Minima\n","El estudiante "+(nom)+" tiene una nota de: "+(valor_max)
         print("\n")
         return minimo
     
@@ -120,7 +120,7 @@ class Reporte:
         <head>Reporte</head>
         <body><p>sustitucion</p></body> 
         </html>"""
-        mensaje.replace('sustitucion',minimo)
-        f.write(mensaje)
+        x=mensaje.replace('sustitucion',minimo)
+        f.write(x)
         f.close()
         print("Reporte creado con Exito")

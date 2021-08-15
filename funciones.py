@@ -18,7 +18,7 @@ class Funciones:
         rep = Reporte()
         #ASC,DESC,AVG,MIN,MAX,APR,REP
         for x in lista_parametros:
-            if (x=="ASC"):
+            if (x==" ASC" or x=="ASC" or x==" ASC "):
                 rep.ascendente(self.usuario)
             elif (x=="DESC"):
                 rep.descendente(self.usuario)
@@ -88,4 +88,4 @@ class Funciones:
                     aux += x 
 
 
-        self.parametros.append(aux)
+        self.parametros.append(aux) #Aqui guardo el ultimo parametro ingresado
