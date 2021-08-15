@@ -1,10 +1,13 @@
 
 from tkinter import filedialog, Tk
 from Funciones import Funciones
+from Estudiante import Estudiante
+from Reporte import Reporte
 
-listaT = [1,56,65,24,23,89]
+
 #dato = ""
 gestor = Funciones()
+report = Reporte()
 
 def abrir():
     print("En el metodo abrir")
@@ -30,11 +33,7 @@ def prueba ():
     txt = abrir()
     if txt is not None:
         dato = txt
-        gestor.obtenerData(dato)
-       
-
-        
-        
+        gestor.obtenerData(dato)  
     else:
         print("Error lectura")
 
@@ -51,18 +50,19 @@ if __name__ == "__main__":
     while opcion != 4:
 
         if opcion == 1:
-            print("Opcion 1")
+            print("\n")
             prueba()
-            
-            
+            print("\n")
+             
         elif opcion == 2:
-            print("En 2")
-            gestor.valor_maximo(gestor.usuario)
-            
-            
-            
+            print("\n")
+            gestor.imprimirParametros(gestor.parametros)
+            print("\n")
+      
         elif opcion == 3:
-            print("En 3")
+            print("\n")
+            report.reporte()
+            print("\n")
             
         else:
             print("Ingrese una opcion valida")
