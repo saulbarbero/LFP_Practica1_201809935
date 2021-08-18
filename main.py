@@ -4,8 +4,6 @@ from Funciones import Funciones
 from Estudiante import Estudiante
 from Reporte import Reporte
 
-
-#dato = ""
 gestor = Funciones()
 report = Reporte()
 
@@ -50,17 +48,26 @@ if __name__ == "__main__":
     while opcion != 4:
 
         if opcion == 1:
+            print("Opcion 1")
             prueba()
-            print("\n")
+           
+            report.valor_minimo_directo(gestor.usuario)
+            report.valor_maximo_directo(gestor.usuario)
+            report.valor_promedio_directo(gestor.usuario)
+            report.valor_descendente_directo(gestor.usuario)
+            report.valor_ascendente_directo(gestor.usuario)
+            report.valor_reprobados_directo(gestor.usuario)
+            report.valor_aprobados_directo(gestor.usuario)
+
+
+            #report.reporte()
             
-             
         elif opcion == 2:
             gestor.imprimirParametros(gestor.parametros)
-            print("\n")
-      
+            
         elif opcion == 3:
+            print("En 3")
             report.reporte()
-            print("\n")
             
         else:
             print("Ingrese una opcion valida")

@@ -35,6 +35,29 @@ class Funciones:
             else:
                 print("Error")
 
+
+    def valor_imprimirParametros_directo(self,lista_parametros):
+        rep = Reporte()
+        #ASC,DESC,AVG,MIN,MAX,APR,REP
+        for x in lista_parametros:
+            if (x==" ASC" or x=="ASC" or x==" ASC "):
+                rep.valor_ascendente_directo(self.usuario)
+            elif (x=="DESC"):
+                rep.valor_descendente_directo(self.usuario)
+            elif (x=="AVG"):
+                rep.valor_promedio_directo(self.usuario)
+            elif (x=="MIN"):
+                rep.valor_minimo_directo(self.usuario)
+            elif (x=="MAX"):
+                rep.valor_maximo_directo(self.usuario)
+            elif (x=="APR"):
+                rep.valor_reprobados_directo(self.usuario)
+            elif (x=="REP"):
+                rep.valor_aprobados_directo(self.usuario)
+            else:
+                print("Error en llenar HTML")
+    
+
         
 
     def obtenerData(self,data):
