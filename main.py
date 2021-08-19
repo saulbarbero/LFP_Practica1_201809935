@@ -8,7 +8,7 @@ gestor = Funciones()
 report = Reporte()
 
 def abrir():
-    print("En el metodo abrir")
+    
     Tk().withdraw()
     archivo = filedialog.askopenfile(
         title = "Seleccionar un archivo LFP",
@@ -48,8 +48,9 @@ if __name__ == "__main__":
     while opcion != 4:
 
         if opcion == 1:
-            print("Opcion 1")
+         
             prueba()
+            
            
             report.valor_minimo_directo(gestor.usuario)
             report.valor_maximo_directo(gestor.usuario)
@@ -63,10 +64,12 @@ if __name__ == "__main__":
             #report.reporte()
             
         elif opcion == 2:
+            print(gestor.nombreCurso)
+            print("\n")
             gestor.imprimirParametros(gestor.parametros)
             
         elif opcion == 3:
-            print("En 3")
+          
             report.reporte()
             
         else:

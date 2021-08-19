@@ -20,17 +20,17 @@ class Funciones:
         for x in lista_parametros:
             if (x==" ASC" or x=="ASC" or x==" ASC "):
                 rep.ascendente(self.usuario)
-            elif (x=="DESC"):
+            elif (x==" DESC" or x=="DESC" or x=="DESC "):
                 rep.descendente(self.usuario)
-            elif (x=="AVG"):
+            elif (x==" AVG" or x=="AVG" or x=="AVG "):
                 rep.promedio(self.usuario)
-            elif (x=="MIN"):
+            elif (x==" MIN" or x=="MIN" or x=="MIN "):
                 rep.valor_minimo(self.usuario)
-            elif (x=="MAX"):
+            elif (x==" MAX" or x=="MAX" or x=="MAX "):
                 rep.valor_maximo(self.usuario)
-            elif (x=="APR"):
+            elif (x==" APR" or x=="APR" or x=="APR "):
                 rep.reprobados(self.usuario)
-            elif (x=="REP"):
+            elif (x==" REP" or x=="REP" or x=="REP "):
                 rep.aprobados(self.usuario)
             else:
                 print("Error")
